@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Admin login</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<script src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+		{
+$("#username").focus();
+
+		});
+function reset()
+{
+	
+	$("#vivek").html("");
+	
+}
+function validate()
+{
+var name=$("#username").val();
+var pwd=$("#password").val();
+ 
+$("#theform").submit(function()
+		{
+
+	if(name=="admin" && pwd=="admin")
+	{
+window.location="index.html"
+return true;
+	}
+	else if(name=="")
+	{
+	alert("Please enter the Username");
+	return false;
+	}
+else if(pwd=="")
+{
+     alert("please enter the Password");
+	return false;
+}
+else
+{
+	alert("username and password are wrong");
+	return false;
+}
+return true;
+		});
+}
+</script>
+<body>
+
+
+<div class="header">
+<img src="banner.jpg" style="width:100%;height:120px;">
+</div>
+  <div class="content">
+  <br><br>
+ <center><b style="margin-left:13%; font-size:25px;"> Locator
+Using Bluetooth On Smartphones 
+</b></center><br><br>
+ 
+  
+  <div class="cont-page">
+  <div class="a"><b style="color:#fff; font-size:30px; margin-left:140px; position:relative;top:5px;"> SIGN IN</b></div>
+ 
+ <br>
+ <div align="center">
+
+      <form method="post" action="home.php" id="theform" onSubmit="return validate()" >
+      <b style="color:#fff;">Username:</b>&nbsp;&nbsp;<input type="text" name="username"id="username" class="txtbx"><br><br>
+      <b style="color:#fff;"> Password:</b>&nbsp;&nbsp;<input type="password" name="password" id="password" class="txtbx"><br><br>
+      <input type="submit" name="commit" value="Login" onClick="validate()" class="button">
+    </form>
+   </div> 
+  </div>
+</div>
+<div class="footer"><center><b style="color:#fff; position:relative;top:20px;">Eyeopen Technologies </b> </center></div>
+</body>
+</html>
