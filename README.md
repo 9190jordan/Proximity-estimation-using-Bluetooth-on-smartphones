@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/e9ad2093-83f7-4fa8-8f43-25079a7924b5)# Proximity-estimation-using-Bluetooth-on-smartphones
+# Proximity-estimation-using-Bluetooth-on-smartphones
 
 # Description
 We demonstrate through experimental studies the efficacy of Bluetooth for this exact purpose. We propose a proximity estimation model to determine the distance based on the RSSI values of Bluetooth and light sensor data in different environments. 
